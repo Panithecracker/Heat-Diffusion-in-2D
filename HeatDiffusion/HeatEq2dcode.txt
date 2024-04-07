@@ -1,0 +1,99 @@
+format long
+clear
+D = 1;
+a = -1;
+b = 1;
+dx = 0.1; 
+dt = (3*(dx)^2)/(16*1); %stable time step (1 because that is the upperbound of a stable dt when D = 1 but since we want accuracy too for smaller D we can use the same dt too)
+Tf = 1; %final time
+x = linspace(-1,1,(b-a)/(dx) +1);
+y = x;
+M0 = zeros(length(x),length(x));
+[X,Y] = meshgrid(x,y);
+for i=1:size(X,1)
+    for j=1:size(X,2)
+%         M0(i,j) = (X(i,j)^4-1)*(Y(i,j)^4-1); 
+        M0(i,j) = (1+cos(pi*X(i,j)))*(1+cos(pi*Y(i,j)));
+    end
+end
+%% computing the distribution after 0,0.25 and 1 time units:
+% surf(X,Y,M0);
+% grid on;
+% shading interp
+% xlabel("x");
+% ylabel("y");
+% zlabel("Initial Temperature");
+% 
+% figure
+% U = SolveHeatEquation2D(M0',1,dx,dt,0.25);
+% surf(X,Y,U');
+% grid on;
+% shading interp    
+% xlabel("x");
+% ylabel("y");
+% zlabel("Temperature after 1/4 second");
+% 
+% figure
+% U = SolveHeatEquation2D(U,1,dx,dt,0.75);
+% surf(X,Y,U');
+% grid on;
+% shading interp    
+% xlabel("x");
+% ylabel("y");
+% zlabel("Temperature after 1 second");
+
+%% Making an animation with dx = 0.1 
+S = surf(X,Y,M0);
+grid on;
+shading interp
+xlabel("x");
+ylabel("y");
+zlabel("Temperature");
+% view(2); %uncomment for bird view
+axis([-1 1 -1 1 0 4]);
+caxis([min(M0(:)) max(M0(:))]) %so that the colors are relative to the initial distribution (the highest values are still the darkest ones, but less dark compared to start)
+colormap('jet')
+hold on;
+%extra : record the maximum temperature on matrix
+% V(1) = max(max(M0));
+%create the video writer
+writerObj = VideoWriter('HeatEquation.mp4');
+writerObj.FrameRate = 100;
+%set the seconds per image
+%open the video writer 
+open(writerObj);
+%get and write the frames into the video
+for n = 1:ceil(1/dt)
+    frame = getframe(gcf);
+    writeVideo(writerObj,frame);
+    M0 = SolveHeatEquation2D(M0,D,dx,dt,dt); %solve from 0 to dt with the previously computed solution as initial condition
+%     V(n+1) = max(max(M0));
+    set(S,'Zdata',M0);
+    pause(dt);
+    drawnow();
+end
+%close the video writer object
+close(writerObj);
+
+
+
+
+
+function U = SolveHeatEquation2D(M0,D,dx,dt,Tf)
+%M0 is a [(b-a/dx)+1]^2 matrix with the initial condition across the mesh of a square
+%[a,b]^2 with uniform spacing of dx. D is the diffusivity constant, dt the
+%time step and Tf the final times. 
+% since matlab stores the matrices in column major order, to maximize cache
+% efficiency, I iterate by columns...
+% U_i,j denotes the estimated value at (a+(i-1)*dx,b+(j-1)*dy) after Tf units of
+% time
+U = M0; 
+R = D*(dt/dx^2); 
+for n=1:ceil(Tf/dt) %in the case of a nondivisible final time Tf by dt, just overtake Tf.
+    for j=2:size(M0,2)-1 %dirichlet Bc so skip the boundaries
+        for i=2:size(M0,1)-1
+            U(i,j) = U(i,j)+R*(U(i+1,j)+U(i-1,j)-4*U(i,j)+U(i,j+1)+U(i,j-1));
+        end
+    end
+end
+end
