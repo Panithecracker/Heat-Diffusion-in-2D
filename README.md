@@ -13,7 +13,22 @@ The algorithm I implemented discretizes the above equation and iteratively solve
 # Model simulation and visualization:
 
 
+![2](https://github.com/Panithecracker/Differential-Equations/assets/97905110/579bfcc9-8438-49ef-bcee-34b71c676a8d)                                                   
+![1](https://github.com/Panithecracker/Differential-Equations/assets/97905110/845e7f36-449f-4c1a-95b4-62762c6231f9)
+![0](https://github.com/Panithecracker/Differential-Equations/assets/97905110/8067332d-68b8-4135-8466-2f03d6194430)
+![3](https://github.com/Panithecracker/Differential-Equations/assets/97905110/3cd7307c-e19b-4c9d-989a-1c23cd8a33e0)
 
+#### Flutter App Screenshots
 
-
-
+<table>
+  <tr>
+    <td>First Screen Page</td>
+     <td>Holiday Mention</td>
+     <td>Present day in purple and selected day in pink</td>
+  </tr>
+  <tr>
+    <td><img src=![0](https://github.com/Panithecracker/Differential-Equations/assets/97905110/8067332d-68b8-4135-8466-2f03d6194430) width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1582745125.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1582745139.png" width=270 height=480></td>
+  </tr>
+ </table>
