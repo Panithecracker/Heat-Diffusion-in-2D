@@ -39,9 +39,3 @@ https://github.com/Panithecracker/Differential-Equations/assets/97905110/dfccf2b
 https://github.com/Panithecracker/Differential-Equations/assets/97905110/c1c98828-4aff-4f74-8438-ce09d3f47c2d
 
 
-
-
-
-
-#### Flutter App Screenshots
-
