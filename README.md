@@ -1,5 +1,5 @@
 # Heat Equation in 2D:
-Solving the heat equation in 2D numerically with a forward in time and centered in space scheme (FTCS) and later visualizing the predicted diffusion of heat given different initial distributions and diffusivity values.
+Solving the heat equation in 2D numerically with a forward in time and centered in space scheme (FTCS) and later visualizing the predicted diffusion of heat given different initial distributions and diffusivity values. The spatial domain is a square and the boundary conditions are Dirichlet type but the code can be easily adapted to any problem by just making a change in one line.
 
 # How is it solved?
 The equation describing the temperature of an object whose height can be assumed to not affect its temperature is modeled by:
