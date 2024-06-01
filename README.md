@@ -1,2 +1,2 @@
-# Differential-Equations
-Here I store some projects I made during the course Computational Methods for ODES and PDES in University of Waterloo where I analysed different differential equations and studied the nummerical shemes currently available to approximate their solution. All supported with visualization and animation of the dynamics based on their use case.
+# Diffusion Equation in higher dimensions:
+Solving the heat equation in 2 dimensions numerically with a forward in time and centered in space FD scheme and later visualizing the predicted diffusion of heat given different initial distributions and diffusivity values.
