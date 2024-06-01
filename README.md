@@ -14,7 +14,7 @@ The algorithm I implemented discretizes the above equation and iteratively solve
 ![image](https://github.com/Panithecracker/Differential-Equations/assets/97905110/04b6ba3a-3601-4cca-a145-e269da143cbb)
 
 # Model simulation and visualization:
-Some snapshots in time with diffuivity coefficient $\alpha = 1$.
+Some snapshots in time with diffusivity coefficient $\alpha = 1$ units of area per time.
 
 
 ![0 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/81624978-edf2-4f12-912a-9f40dd36257d) ![1 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/0e574889-284c-4918-b05b-478ac3f5317a)
