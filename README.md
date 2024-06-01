@@ -8,7 +8,7 @@ The model describing the temperature of a 2D object (or 3D which is short enough
 
 with $T(x,y,0) = T_0$ (initial temperature distribution) and prescribed boundary conditions (Dirichlet, Neumann, Periodic, Mixed,...)
 
-where T is the temperature at position $x,y$ after $t$ units of time.The constant $\alpha$ is known as the diffusivity coefficient and it has units of area per time, representing the speed at which the heat diffuses, which may be different across various materials.
+where $T(x,y,t)$ is the temperature at position $x,y$ after $t$ units of time.The constant $\alpha$ is known as the diffusivity coefficient and it has units of area per time, representing the speed at which the heat diffuses, which may be different across various materials.
 The algorithm I implemented discretizes the above equation and iteratively solves the following finite difference equation based on the boundary values and initial distribution.
 
 ![image](https://github.com/Panithecracker/Differential-Equations/assets/97905110/04b6ba3a-3601-4cca-a145-e269da143cbb)
