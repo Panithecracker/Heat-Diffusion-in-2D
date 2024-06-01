@@ -20,15 +20,23 @@ Some snapshots in time with diffusivity coefficient $\alpha = 1$ units of area p
 ![0 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/81624978-edf2-4f12-912a-9f40dd36257d) ![1 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/0e574889-284c-4918-b05b-478ac3f5317a)
 
 ![2 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/1bff8e71-a78f-48b3-9d48-668582de4de6) ![3](https://github.com/Panithecracker/Differential-Equations/assets/97905110/66a2dd25-0506-4d50-a340-07a05d520042)
+# Movies for $\alpha = 1$
+
+https://github.com/Panithecracker/Differential-Equations/assets/97905110/767543c8-3739-497f-9b71-dd4f043e6702
+
+https://github.com/Panithecracker/Differential-Equations/assets/97905110/ad8533a1-e0b8-4e22-8be6-471b3f5377a5
+
+
+
+
+
 
 
 # Movies for $\alpha =0.1$
 
 https://github.com/Panithecracker/Differential-Equations/assets/97905110/dfccf2be-6be9-4557-aa94-7b9c5ddbfabc
 
-
 https://github.com/Panithecracker/Differential-Equations/assets/97905110/c1c98828-4aff-4f74-8438-ce09d3f47c2d
-
 
 
 
