@@ -10,5 +10,10 @@ The algorithm I implemented discretizes the above equation and iteratively solve
 
 ![image](https://github.com/Panithecracker/Differential-Equations/assets/97905110/04b6ba3a-3601-4cca-a145-e269da143cbb)
 
+# Model simulation and visualization:
+
+
+
+
 
 
