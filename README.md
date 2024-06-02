@@ -31,4 +31,8 @@ Some snapshots in time of the temperature distribution (seen from above) with di
 
 ![D_0 1](https://github.com/Panithecracker/Differential-Equations/assets/97905110/7aac2e26-396d-48ba-8d18-af992e9e6b57)
 
-As expected, making the diffusivity coefficient 10 times smaller results in a slower diffusion of heat.
+
+
+
+## As expected, making the diffusivity coefficient 10 times smaller results in a slower diffusion of heat.
+## In both cases due to the initial condition and boundary conditions, the distribution decays exponentially in time to to $z = 0$ since the ends of the body are not insulated. 
