@@ -14,7 +14,7 @@ The algorithm I implemented discretizes the above equation and iteratively solve
 ![image](https://github.com/Panithecracker/Differential-Equations/assets/97905110/04b6ba3a-3601-4cca-a145-e269da143cbb)
 
 # Model simulation and visualization:
-Some snapshots in time with diffusivity coefficient $\alpha = 1$ units of area per time.
+Some snapshots in time with diffusivity coefficient $\alpha = 1$ units of area per time with initial distribution $T_0(x,y) = (1+cos(\pi x))(1+cos(\pi y))$
 
 
 ![0 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/81624978-edf2-4f12-912a-9f40dd36257d) ![1 (1)](https://github.com/Panithecracker/Differential-Equations/assets/97905110/0e574889-284c-4918-b05b-478ac3f5317a)
@@ -24,7 +24,8 @@ Some snapshots in time with diffusivity coefficient $\alpha = 1$ units of area p
 
 https://github.com/Panithecracker/Differential-Equations/assets/97905110/767543c8-3739-497f-9b71-dd4f043e6702
 
-https://github.com/Panithecracker/Differential-Equations/assets/97905110/ad8533a1-e0b8-4e22-8be6-471b3f5377a5
+![D_1](https://github.com/Panithecracker/Differential-Equations/assets/97905110/0720c5f6-c306-4502-98ce-39a28ff91734)
+
 
 
 
